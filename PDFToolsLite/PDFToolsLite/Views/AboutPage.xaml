@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="PDFToolsLite.Views.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PDFToolsLite.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:communitytoolkit="using:CommunityToolkit.WinUI.Controls"
+    mc:Ignorable="d">
+
+    <Grid>
+        <ScrollView VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Stretch" Spacing="4" Margin="8,8,8,8">
+                <TextBlock Style="{StaticResource TitleTextBlockStyle}">About</TextBlock>
+                <communitytoolkit:SettingsCard x:Name="SponsorCard" Header="Become a Sponsor" Description="Show your support by becoming a sponsor.">
+                    <Grid>
+                        <Button x:Name="BecomeASponsor" Click="BecomeASponsor_Click" Visibility="Collapsed">Become a Sponsor</Button>
+                        <ProgressRing x:Name="CheckingSponsorshipProgressRing" Width="24" Height="24" />
+                    </Grid>
+                </communitytoolkit:SettingsCard>
+                <communitytoolkit:SettingsExpander Header="PDF Tools Lite" Description="Copyright &#xA9; 2025 Huseyin78112. All rights reserved.">
+                    <communitytoolkit:SettingsExpander.HeaderIcon>
+                        <BitmapIcon ShowAsMonochrome="False" UriSource="ms-appx:///Images/StoreLogo.png" />
+                    </communitytoolkit:SettingsExpander.HeaderIcon>
+                    <communitytoolkit:SettingsExpander.Items>
+                        <communitytoolkit:SettingsCard ContentAlignment="Left">
+                            <StackPanel Spacing="4">
+                                <HyperlinkButton NavigateUri="https://github.com/huseyin78112/PDFToolsLite">Source code</HyperlinkButton>
+                                <HyperlinkButton NavigateUri="https://github.com/huseyin78112/PDFToolsLite/blob/master/LICENSE.txt">License</HyperlinkButton>
+                                <HyperlinkButton NavigateUri="https://huseyin78112.info/privacy-policy/pdftoolslite.html">Privacy Policy</HyperlinkButton>
+                            </StackPanel>
+                        </communitytoolkit:SettingsCard>
+                    </communitytoolkit:SettingsExpander.Items>
+                </communitytoolkit:SettingsExpander>
+            </StackPanel>
+        </ScrollView>
+    </Grid>
+</Page>
