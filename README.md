@@ -13,7 +13,7 @@ All processing happens locally on your device — no files are uploaded to serve
 - 100% free, open source
 
 ## Get Started
-You can download the latest release from the [Microsoft Store](https://apps.microsoft.com/) or build from source.
+You can download the latest release from the [Microsoft Store](https://apps.microsoft.com/detail/9p11rfn0vt47) or build from source.
 
 ## Support
 This project is maintained by a single developer.  
