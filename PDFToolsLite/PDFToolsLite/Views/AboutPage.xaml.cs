@@ -28,9 +28,7 @@ namespace PDFToolsLite.Views
         public AboutPage()
         {
             InitializeComponent();
-#if !DEBUG
-            CheckSponsorshipAndSet();
-#else
+#if DEBUG
             SetAsSponsor();
             CheckingSponsorshipProgressRing.Visibility = Visibility.Collapsed;
             BecomeASponsor.Visibility = Visibility.Visible;
@@ -71,7 +69,7 @@ namespace PDFToolsLite.Views
             BecomeASponsor.Content = "Copy message";
             SponsorCard.Description = "You're already a sponsor. Thank you! You can share your sponsorship with your network by copying the message.";
         }
-        private async void CheckSponsorshipAndSet()
+        public async void CheckSponsorshipAndSet()
         {
             if (await PurchaseUtils.CheckSponsorshipAsync())
             {

@@ -47,6 +47,9 @@ namespace PDFToolsLite
             InitializeWithWindow.Initialize(_context, WindowNative.GetWindowHandle(this));
             PurchaseUtils.PurchaseContext = _context;
             Utils.MainWindow = this;
+#if !DEBUG
+            AppAboutPage.CheckSponsorshipAndSet();
+#endif
         }
         private StoreContext _context = null;
         public ObservableCollection<FileItem> Files { get; } = new();
