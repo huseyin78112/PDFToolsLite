@@ -8,7 +8,7 @@ All processing happens locally on your device — no files are uploaded to serve
 - Merge multiple PDFs into one file
 - Split PDFs into separate documents
 - Rotate PDF pages easily
-- Convert PDFs to images (PNG, JPEG)
+- Convert PDFs to PNGs
 - Lightweight and fast, with a modern interface
 - 100% free, open source
 
