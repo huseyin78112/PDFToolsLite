@@ -1,3 +1,6 @@
+# ⚠️ Deprecation Notice
+* PDF Tools Lite is deprecated and will be removed from the Microsoft Store by the end of 2025.
+* This repository is no longer actively maintained.
 # PDF Tools Lite
 
 **PDF Tools Lite** is a free and open-source Windows application built with WinUI 3.  
